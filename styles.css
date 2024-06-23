@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #320b74 0%, #090979 35%, #005b6e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  gap: 20px;
+}
+
+.container h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.container h1 span {
+  color: #ed9222;
+}
+
+#entrada-de-conteudo {
+  display: flex;
+  width: 80%;
+  gap: 20px;
+  align-items: center;
+}
+
+#entrada-de-conteudo textarea {
+  width: 80%;
+  height: 150px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 15px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+
+.acao-box {
+  padding: 15px;
+  gap: 15px;
+  flex: 1;
+}
+
+.acoes select,
+.acoes button,
+#arquivo-label {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#selecao-voz {
+  width: 100%;
+}
+
+.acoes button {
+  background-color: #ed9222;
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+#arquivo-label {
+  font-size: 20px;
+  padding: 15px;
+  background-color: #ed9222;
+}
+
+.acoes button:hover,
+#arquivo-label:hover {
+  background-color: #d48a35;
+}
